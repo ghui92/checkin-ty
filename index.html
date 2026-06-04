@@ -47,16 +47,16 @@ HOW TO EDIT:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-<title>2026年6月 · 日常打卡</title>
+<title>G.hui-check in</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="每日打卡">
+<meta name="apple-mobile-web-app-title" content="G.hui-check in">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#5AA875">
 <meta name="application-name" content="每日打卡">
 <link rel="manifest" href="./manifest.json">
-<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz48cmVjdCB3aWR0aD0nMTAwJyBoZWlnaHQ9JzEwMCcgcng9JzIwJyBmaWxsPScjM0Q0QTVDJy8+PHRleHQgeD0nNTAnIHk9JzYyJyBmb250LXNpemU9JzUwJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPSd3aGl0ZSc+Ry48L3RleHQ+PC9zdmc+">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz48cmVjdCB3aWR0aD0nMTAwJyBoZWlnaHQ9JzEwMCcgcng9JzIwJyBmaWxsPScjM0Q0QTVDJy8+PHRleHQgeD0nNTAnIHk9JzYyJyBmb250LXNpemU9JzUwJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmaWxsPSd3aGl0ZSc+Ry48L3RleHQ+PC9zdmc+">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%233D4A5C'/%3E%3Ctext x='50' y='65' font-size='55' text-anchor='middle' fill='white'%3EG.%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%233D4A5C'/%3E%3Ctext x='50' y='65' font-size='55' text-anchor='middle' fill='white'%3EG.%3C/text%3E%3C/svg%3E">
 <style>
 /* ========== Reset & Variables (Green-dominant) ========== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -160,15 +160,15 @@ body.dark .task-card.done .task-duration{
   background:rgba(232,164,130,0.15);
 }
 
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:16px;padding-top:calc(72px + env(safe-area-inset-top,0px));padding-bottom:calc(90px + env(safe-area-inset-bottom,0px));transition:background .3s,color .3s;line-height:1.5}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;font-size:16px;padding-top:calc(72px + env(safe-area-inset-top,0px));padding-bottom:calc(100px + env(safe-area-inset-bottom,0px));transition:background .3s,color .3s;line-height:1.5}
 
 /* ========== Header (Claymorphism) ========== */
-.header{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--header-bg);color:var(--header-text);padding:calc(20px + env(safe-area-inset-top,0px)) 20px 4px 20px;display:flex;align-items:center;justify-content:center;transition:background .3s;box-shadow:0 4px 20px rgba(139,157,195,.2);height:72px;box-sizing:border-box}
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--header-bg);color:var(--header-text);padding:calc(16px + env(safe-area-inset-top,0px)) 20px 12px 20px;display:flex;align-items:center;justify-content:center;transition:background .3s;box-shadow:0 4px 20px rgba(139,157,195,.2);height:72px;box-sizing:border-box}
 .header .header-center{display:flex;justify-content:center}
 .header .date-badge{background:rgba(255,255,255,.25);border-radius:24px;padding:8px 24px;font-size:18px;font-weight:700;letter-spacing:.5px;box-shadow:var(--clay-shadow-small);color:var(--header-text);white-space:nowrap}
 
 /* ========== Bottom Tab Bar (Material Navigation) ========== */
-.tab-bar{position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--card-bg);border-top:1px solid var(--border);display:flex;padding:0 0 env(safe-area-inset-bottom,0px);transition:background .3s;box-shadow:0 -2px 12px rgba(0,0,0,.08);height:60px;align-items:center;width:100%;box-sizing:border-box}
+.tab-bar{position:fixed;bottom:0;left:0;right:0;z-index:100;background:var(--card-bg);border-top:1px solid var(--border);display:flex;padding:0 0 env(safe-area-inset-bottom,0px);transition:background .3s;box-shadow:0 -2px 12px rgba(0,0,0,.08);height:72px;align-items:center;width:100%;box-sizing:border-box}
 .tab-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px 0 12px;cursor:pointer;color:var(--tab-inactive);font-size:12px;gap:2px;transition:color .2s;-webkit-tap-highlight-color:transparent;position:relative;height:100%;min-width:0}
 .tab-item:active{background:rgba(122,158,126,.08)}
 .tab-item.active{color:var(--primary)}
@@ -176,7 +176,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hira
 .tab-item .tab-sym{font-size:20px;line-height:1;font-weight:400}
 
 /* ========== Day Navigation (Claymorphism) ========== */
-.day-nav{display:flex;align-items:center;justify-content:center;gap:24px;padding:0;position:relative;margin-top:-2px}
+.day-nav{display:flex;align-items:center;justify-content:center;gap:24px;padding:0;position:relative;margin-top:-4px}
 .day-nav-arrow{width:32px;height:32px;border-radius:50%;border:none;background:var(--card-bg);color:var(--text);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s;box-shadow:var(--clay-shadow);flex-shrink:0}
 .day-nav-arrow:hover{box-shadow:var(--clay-shadow-hover);transform:translateY(-2px)}
 .day-nav-arrow:active{transform:scale(.9);box-shadow:var(--clay-shadow-inset)}
@@ -190,7 +190,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hira
 .day-nav-today.hidden{visibility:hidden}
 
 /* ========== Pages ========== */
-.page{display:none;padding:16px;padding-bottom:calc(80px + env(safe-area-inset-bottom,0px));animation:fadeIn .25s ease;padding-top:calc(44px + env(safe-area-inset-top,0px))}
+.page{display:none;padding:16px;padding-bottom:calc(88px + env(safe-area-inset-bottom,0px));animation:fadeIn .25s ease;padding-top:calc(20px + env(safe-area-inset-top,0px))}
 .page.active{display:block}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
